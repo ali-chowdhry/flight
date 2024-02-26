@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const bookings=[];
+        const createbooking=function(plane,flightnumber,passenger=1,price=30000*passenger){
+            const booking={
+                plane,
+                flightnumber,
+                passenger,
+                price
+            }
+            console.log(booking);
+            bookings.push(booking);
+        
+        }
+        createbooking("PIA","lh2324");
+        createbooking("PIA","lh2324",3);
+        
+        const flight = "a35102";
+        const ali ={
+            name:"ali chowdhry",
+            passport:123456789,
+        };
+
+        const cheakin= function(flightnumber,passenger,price){
+            flightnumber="a21543";
+            passenger.name='mr.' + passenger.name;
+
+            if (passenger.passport === 123456789) {
+                alert("successful check in")
+            } else {
+                alert("worng passport")
+            }
+        }
+       checkin(flight,ali);
+       console.log(flight);
+       console.log(ali);
+    </script>
+</body>
+</html>
